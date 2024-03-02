@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".ActivityJogo">
+
+    <Button
+        android:id="@+id/btnAmarelo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="68dp"
+        android:contentDescription=" "
+        android:onClick="clickAmarelo"
+        app:backgroundTint="@color/AmareloEscuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerde"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="160dp"
+        android:contentDescription=" "
+        android:onClick="clickVerde"
+        app:backgroundTint="@color/Verde"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAzul"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:contentDescription=" "
+        android:onClick="clickAzul"
+        app:backgroundTint="@color/Azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmarelo" />
+
+    <Button
+        android:id="@+id/btnVermelho"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription=" "
+        android:onClick="clickVermelho"
+        app:backgroundTint="@color/Vermelho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerde" />
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="clickJogar"
+        android:text="Jogar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="177dp"
+        android:text="Recorde:"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="177dp"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtErrou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="177dp"
+        android:text='Você errou! Clique em "JOGAR" para reiniciar!'
+        android:textColor="@color/Vermelho"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPontuacao" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="35dp"
+        android:text="Clique em &quot;JOGAR&quot; para iniciar!"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
